@@ -1,35 +1,35 @@
-const CONFIG = {
-  donation: "https://app.lacagnottedesproches.fr/cagnotte/histoire-des-armeniens-de-stanoze/",
-  pdf: "https://memoire-stanoze.org/wp-content/uploads/2026/06/Garabed-Terzian-Stanoze-version-complete-avec-photos-beta.pdf"
+const liensDuProjet = {
+  cagnotte: "https://app.lacagnottedesproches.fr/cagnotte/histoire-des-armeniens-de-stanoze/",
+  livrePdf: "https://memoire-stanoze.org/wp-content/uploads/2026/06/Garabed-Terzian-Stanoze-version-complete-avec-photos-beta.pdf"
 };
 
-const menuToggle = document.querySelector(".menu-toggle");
-const siteNav = document.querySelector("#site-nav");
+const boutonMenu = document.querySelector(".menu-toggle");
+const navigation = document.querySelector("#navigation-principale");
 
-function hydrateLinks() {
+function appliquerLesLiens() {
   document.querySelectorAll("[data-link]").forEach((link) => {
-    const key = link.dataset.link;
-    if (CONFIG[key]) {
-      link.href = CONFIG[key];
+    const lien = link.dataset.link;
+    if (liensDuProjet[lien]) {
+      link.href = liensDuProjet[lien];
     }
   });
 }
 
-function setupMenu() {
-  if (!menuToggle || !siteNav) return;
+function activerLeMenuMobile() {
+  if (!boutonMenu || !navigation) return;
 
-  menuToggle.addEventListener("click", () => {
-    const open = siteNav.classList.toggle("open");
-    menuToggle.setAttribute("aria-expanded", String(open));
+  boutonMenu.addEventListener("click", () => {
+    const menuOuvert = navigation.classList.toggle("open");
+    boutonMenu.setAttribute("aria-expanded", String(menuOuvert));
   });
 
-  siteNav.addEventListener("click", (event) => {
+  navigation.addEventListener("click", (event) => {
     if (event.target.matches("a")) {
-      siteNav.classList.remove("open");
-      menuToggle.setAttribute("aria-expanded", "false");
+      navigation.classList.remove("open");
+      boutonMenu.setAttribute("aria-expanded", "false");
     }
   });
 }
 
-hydrateLinks();
-setupMenu();
+appliquerLesLiens();
+activerLeMenuMobile();

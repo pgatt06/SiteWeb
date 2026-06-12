@@ -1,17 +1,17 @@
 # Mémoire de Stanoze
 
-Site simple, sans multilingue, inspiré de `memoire-stanoze.org`.
+Projet Mémoire de Stanoze : accès au PDF, à la cagnotte et à la vidéo.
 
 ## Fichiers
 
-- `index.html` : page principale
-- `styles.css` : mise en page et style
-- `script.js` : liens configurables et menu mobile
-- `assets/archive-hero.png` : image générée pour le hero
+- `index.html` : document HTML principal
+- `styles.css` : styles visuels
+- `script.js` : liens de la cagnotte, du PDF et menu mobile
+- `assets/archive-hero.png` : visuel d'archive utilisé en haut de l'écran
 
 ## Visualiser en local
 
-Pour voir le site sur votre ordinateur sans passer par GitHub, ouvrez un terminal dans ce dossier :
+Pour visualiser le projet sur votre ordinateur, ouvrez un terminal dans ce dossier :
 
 ```bash
 cd <PATH>/SiteWeb
@@ -26,15 +26,15 @@ http://127.0.0.1:4173/
 
 Pour arrêter le serveur local, revenez dans le terminal et faites `Ctrl+C`.
 
-Il est aussi possible d'ouvrir directement `index.html`, mais le serveur local est plus proche du comportement réel du site.
+Il est aussi possible d'ouvrir directement `index.html`, mais le serveur local évite les différences de comportement selon les navigateurs.
 
-## Liens configurés
+## Liens du projet
 
 Les liens sont dans `script.js` :
 
 ```js
-donation: "https://app.lacagnottedesproches.fr/cagnotte/histoire-des-armeniens-de-stanoze/",
-pdf: "https://memoire-stanoze.org/wp-content/uploads/2026/06/Garabed-Terzian-Stanoze-version-complete-avec-photos-beta.pdf"
+cagnotte: "https://app.lacagnottedesproches.fr/cagnotte/histoire-des-armeniens-de-stanoze/",
+livrePdf: "https://memoire-stanoze.org/wp-content/uploads/2026/06/Garabed-Terzian-Stanoze-version-complete-avec-photos-beta.pdf"
 ```
 
 ## Vidéo
