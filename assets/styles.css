@@ -102,9 +102,7 @@ button.primary {
   min-height: clamp(560px, 86vh, 760px);
   display: grid;
   align-items: end;
-  background:
-    linear-gradient(90deg, rgba(20, 29, 26, 0.82), rgba(20, 29, 26, 0.42) 44%, rgba(20, 29, 26, 0.08)),
-    url("hero-library.png") center / cover no-repeat;
+  background: linear-gradient(135deg, #5f7568 0%, #b24b32 100%);
   color: #fff;
 }
 
