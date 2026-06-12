@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mémoire de Stanoze</title>
-    <meta name="description" content="Mémoire de Stanoze : PDF, cagnotte et forum communautaire.">
+    <meta name="description" content="Mémoire de Stanoze : livre, cagnotte et vidéo.">
     <meta property="og:title" content="Mémoire de Stanoze">
     <meta property="og:description" content="Rassembler, préserver et transmettre la mémoire de Stanoze.">
     <meta property="og:type" content="website">
@@ -33,7 +33,7 @@
           <a href="#histoire">Histoire</a>
           <a href="#documents">PDF</a>
           <a href="#soutenir">Cagnotte</a>
-          <a href="#forum">Forum</a>
+          <a href="#video">Vidéo</a>
         </nav>
       </div>
     </header>
@@ -56,6 +56,10 @@
               <span class="icon" aria-hidden="true">↓</span>
               Télécharger le PDF
             </a>
+            <a class="button button-light" href="#video">
+              <span class="icon" aria-hidden="true">▶</span>
+              Voir la vidéo
+            </a>
           </div>
         </div>
       </section>
@@ -69,8 +73,8 @@
           par les récits, les documents et les photographies.
         </p>
         <p>
-          Cette page GitHub reprend l'esprit sobre du site de référence: une
-          entrée directe vers le document, la cagnotte et un espace d'échange.
+          Ce site reprend l'esprit sobre du site de référence: une entrée
+          directe vers le document, la cagnotte et les contenus de mémoire.
         </p>
       </section>
 
@@ -106,73 +110,53 @@
             <a class="card-link" data-link="donation" href="https://app.lacagnottedesproches.fr/cagnotte/histoire-des-armeniens-de-stanoze/" target="_blank" rel="noreferrer">Ouvrir la cagnotte</a>
           </article>
 
-          <article class="feature-card" id="forum-card">
+          <article class="feature-card" id="video-card">
             <div class="feature-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" focusable="false">
-                <path d="M4 5h16v11H7l-3 3z"></path>
-                <path d="M8 9h8"></path>
-                <path d="M8 12h5"></path>
+                <path d="M4 5h16v14H4z"></path>
+                <path d="M10 9l5 3-5 3z"></path>
               </svg>
             </div>
-            <h3>Forum</h3>
-            <p>Laisser une question, une piste familiale ou une information à vérifier.</p>
-            <a class="card-link" href="#forum">Rejoindre la discussion</a>
+            <h3>Vidéo</h3>
+            <p>Regarder un témoignage vidéo lié à la mémoire de Stanoze.</p>
+            <a class="card-link" href="#video">Voir la vidéo</a>
           </article>
         </div>
+      </section>
+
+      <section class="video-section" id="video" aria-labelledby="video-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">Vidéo récente</p>
+            <h2 id="video-title">Témoignage vidéo</h2>
+          </div>
+          <p>
+            Une ressource audiovisuelle pour compléter le livre et les archives.
+          </p>
+        </div>
+        <div class="video-frame">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/lPQADpsjyA0"
+            title="Vidéo Mémoire de Stanoze"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <p class="video-link">
+          <a href="https://youtu.be/lPQADpsjyA0" target="_blank" rel="noreferrer">Ouvrir la vidéo sur YouTube</a>
+        </p>
       </section>
 
       <section class="archive-band" aria-labelledby="archive-title">
         <div class="archive-image" role="img" aria-label="Composition d'archives, livre et photographies anciennes"></div>
         <div class="archive-copy">
           <p class="section-label">Archives</p>
-          <h2 id="archive-title">Une page pensée pour GitHub Pages</h2>
+          <h2 id="archive-title">Un espace de mémoire</h2>
           <p>
-            Le site est entièrement statique: pas de base de données, pas de
-            build, pas de backend. Les liens externes fonctionnent directement,
-            et le forum utilise le stockage du navigateur.
+            Le livre, la cagnotte et la vidéo sont réunis dans une page sobre,
+            lisible et pensée pour un accès direct aux ressources essentielles.
           </p>
-        </div>
-      </section>
-
-      <section class="forum-section" id="forum" aria-labelledby="forum-title">
-        <div class="section-heading forum-heading">
-          <div>
-            <p class="section-label">Forum</p>
-            <h2 id="forum-title">Discussion communautaire</h2>
-          </div>
-          <p>
-            Les messages ci-dessous restent enregistrés sur cet appareil. Pour
-            un forum public partagé entre tous les visiteurs, il faudra ensuite
-            brancher GitHub Discussions, Giscus ou un service équivalent.
-          </p>
-        </div>
-
-        <div class="forum-layout">
-          <form class="forum-form" id="topic-form">
-            <h3>Nouveau sujet</h3>
-            <label>
-              Votre nom
-              <input id="author" name="author" type="text" autocomplete="name" maxlength="50" required>
-            </label>
-            <label>
-              Titre du sujet
-              <input id="title" name="title" type="text" maxlength="90" required>
-            </label>
-            <label>
-              Message
-              <textarea id="message" name="message" maxlength="1200" required></textarea>
-            </label>
-            <button class="button button-primary" type="submit">Publier</button>
-          </form>
-
-          <div class="forum-list-panel">
-            <div class="forum-tools">
-              <input id="forum-search" type="search" placeholder="Rechercher dans le forum">
-              <button class="small-button" id="export-forum" type="button">Exporter</button>
-              <button class="small-button danger" id="clear-forum" type="button">Vider</button>
-            </div>
-            <div id="topics" class="topics" aria-live="polite"></div>
-          </div>
         </div>
       </section>
     </main>
@@ -180,12 +164,12 @@
     <footer class="site-footer">
       <div>
         <strong>Mémoire de Stanoze</strong>
-        <span>Page statique GitHub Pages</span>
+        <span>Livre, cagnotte et vidéo</span>
       </div>
       <div class="footer-links">
         <a data-link="pdf" href="https://memoire-stanoze.org/wp-content/uploads/2026/06/Garabed-Terzian-Stanoze-version-complete-avec-photos-beta.pdf" target="_blank" rel="noreferrer">PDF</a>
         <a data-link="donation" href="https://app.lacagnottedesproches.fr/cagnotte/histoire-des-armeniens-de-stanoze/" target="_blank" rel="noreferrer">Cagnotte</a>
-        <a href="#forum">Forum</a>
+        <a href="#video">Vidéo</a>
       </div>
     </footer>
   </body>
