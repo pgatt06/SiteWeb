@@ -11,14 +11,21 @@ PDF · Cagnotte · Vidéo
 
 ## Visualiser en local
 
-Pour visualiser le projet sur votre ordinateur, ouvrez un terminal dans ce dossier :
+Pour visualiser le projet sur votre ordinateur, ouvrez un terminal dans ce dossier puis lancez :
+
+Sur macOS :
 
 ```bash
-cd <PATH>/SiteWeb
-python3 -m http.server 4173 --bind 127.0.0.1
+./lancer-site.sh
 ```
 
-Puis ouvrez cette adresse dans votre navigateur :
+Sur Windows :
+
+```bat
+lancer-site.bat
+```
+
+Le navigateur s'ouvre automatiquement sur cette adresse :
 
 ```text
 http://127.0.0.1:4173/
